@@ -1,9 +1,11 @@
 import "./App.css";
 import Nav from "./components/nav/Nav";
+import Wallet from "./components/wallet/Wallet";
 
 function App() {
   return (
-    <div>
+    <div className="App">
+      <Wallet />
       <Nav />
     </div>
   );
