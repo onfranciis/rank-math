@@ -10,7 +10,7 @@ const Graph = () => {
           data={data}
           margin={{
             top: 10,
-            right: 50,
+            right: 40,
             left: 0,
             bottom: 0,
           }}

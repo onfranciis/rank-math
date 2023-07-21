@@ -11,11 +11,13 @@ const Part1 = () => {
   return (
     <div className="Part1">
       <div className="Top">
-        <div className="Coin">
-          <BsCurrencyBitcoin className="Icon" />
-        </div>
+        <div className="Left">
+          <div className="Coin">
+            <BsCurrencyBitcoin className="Icon" />
+          </div>
 
-        <p className="Currency">Bitcoin</p>
+          <p className="Currency">Bitcoin</p>
+        </div>
 
         <p className="SubCurrency">BTC</p>
       </div>

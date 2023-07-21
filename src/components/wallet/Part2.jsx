@@ -18,9 +18,9 @@ const Part2 = () => {
             <span className="Higher"></span>Higher: $6.857
           </p>
         </div>
-      </div>
 
-      <Graph />
+        <Graph />
+      </div>
     </div>
   );
 };
