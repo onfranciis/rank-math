@@ -1,0 +1,102 @@
+.Menu {
+  width: 100%;
+  background-color: white;
+  font-weight: bold;
+  font-size: 25px;
+  color: #4e5b6a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.Menu button {
+  background-color: transparent;
+}
+
+.Menu .Icon {
+  color: #aeb8c4;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.Menu .More {
+  position: relative;
+}
+
+.Menu .Selected {
+  color: white;
+  z-index: 2;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   POP UP                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+
+.PopUp {
+  height: fit-content;
+  background-color: #4e5b6a73;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid white;
+  border-left: 10px solid white;
+  border-radius: 8px;
+  position: absolute;
+  left: -100px;
+  bottom: -150px;
+  transform: scale(0.5);
+  z-index: 3;
+  animation-name: popup;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.PopUp button {
+  background-color: white;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.PopUp .Remove {
+  color: red;
+}
+
+.PopUpCover {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.137);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
