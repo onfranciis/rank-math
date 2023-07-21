@@ -21,6 +21,6 @@ button {
   padding: 5px 10px;
 }
 
-.NavLink:hover {
+.SelectedNav {
   color: #4c5968;
 }

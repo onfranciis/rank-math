@@ -1,15 +1,22 @@
+import "./Nav.css";
 import { FaWallet } from "react-icons/fa";
 import { IoMdCompass, IoIosNotifications } from "react-icons/io";
 import { TbSettingsFilled } from "react-icons/tb";
 
-import "./Nav.css";
-
-const Nav = () => {
+// eslint-disable-next-line react/prop-types
+const Nav = ({ setSelected, selected }) => {
   return (
     <div className="Nav">
       {NavLinks.map((link) => (
-        <button key={link.name} title={link.name}>
-          {link.icon({ className: "NavLink", size: link.size ?? "" })}
+        <button
+          key={link.name}
+          title={link.name}
+          onClick={() => setSelected(link.name)}
+        >
+          {link.icon({
+            className: `NavLink ${selected == link.name ? "SelectedNav" : ""}`,
+            size: link.size ?? "",
+          })}
         </button>
       ))}
     </div>
