@@ -7,7 +7,7 @@ import { CgScan } from "react-icons/cg";
 import { TfiUpload } from "react-icons/tfi";
 
 const Menu = () => {
-  const [toggled, setToggled] = useState(true);
+  const [toggled, setToggled] = useState(false);
 
   return (
     <>
